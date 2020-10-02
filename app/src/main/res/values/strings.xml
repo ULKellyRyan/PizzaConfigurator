@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaConfigurator</string>
+    <string name="cheese">extra cheese</string>
+    <string name="pepperoni">extra pepperoni</string>
+    <string name="bacon">extra bacon</string>
+    <string name="mushrooms">extra mushrooms</string>
+    <string name="pineapple">extra pineapple</string>
+    <string name="alfredo_s_pizza_cafe">Alfredo\'s Pizza Café</string>
+    <string name="choose_your_pizza">Choose your pizza:</string>
+    <string name="choose_your_extras">Choose your extras:</string>
+    <string name="pizza_extras">Pizza Extras</string>
+    <string name="crust">cheesy crust</string>
+    <string name="Submit">Submit</string>
+    <string name="orderConfirmation">You have successfully submitted your order!</string>
+</resources>

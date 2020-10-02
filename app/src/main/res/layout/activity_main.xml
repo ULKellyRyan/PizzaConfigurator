@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="onCheckboxClicked"
+    tools:context=".MainActivity">
+
+    <!--    <androidx.appcompat.widget.SwitchCompat-->
+    <!--        android:id="@+id/switchCompat_crust"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:layout_marginTop="44dp"-->
+    <!--        android:onClick="onSwitchClicked"-->
+    <!--        android:text="@string/crust"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/checkBox_pepperoni" />-->
+
+    <TextView
+        android:id="@+id/textView_chooseExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:text="@string/choose_your_extras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPizzaMenu" />
+
+    <CheckBox
+        android:id="@+id/checkBox_pepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/pepperoni"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_bacon" />
+
+    <CheckBox
+        android:id="@+id/checkBox_bacon"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/bacon"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_pineapple" />
+
+    <CheckBox
+        android:id="@+id/checkBox_pineapple"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/pineapple"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_mushroom" />
+
+    <CheckBox
+        android:id="@+id/checkBox_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:fontFamily="sans-serif"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/cheese"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_chooseExtras" />
+
+    <CheckBox
+        android:id="@+id/checkBox_mushroom"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/mushrooms"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_cheese" />
+
+    <Switch
+        android:id="@+id/switch_crust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="127dp"
+        android:onClick="onSwitchClicked"
+        android:text="@string/crust"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_pepperoni"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPizzaMenu" />
+
+    <TextView
+        android:id="@+id/textView_choosePizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:text="@string/choose_your_pizza"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPizzaMenu"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPizzaMenu"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPizzaMenu"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spinnerPizzaMenu"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_choosePizza" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="submitOrder"
+        android:text="@string/Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_pepperoni" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:fontFamily="@font/alex_brush"
+        android:text="@string/alfredo_s_pizza_cafe"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_choosePizza"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="13dp"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
